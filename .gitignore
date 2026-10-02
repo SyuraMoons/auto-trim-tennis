@@ -1,0 +1,11 @@
+.venv/
+out/
+cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.kilo/
+.DS_Store
+*.mp4
+*.mov

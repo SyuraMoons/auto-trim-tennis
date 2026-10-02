@@ -1,0 +1,15 @@
+[project]
+name = "tennis-autocut"
+version = "0.1.0"
+description = "Trim fixed-camera tennis recordings to gameplay only"
+requires-python = ">=3.11"
+dependencies = ["torch", "torchvision", "opencv-python", "numpy", "scipy", "scikit-learn"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+autocut = "autocut.cli:main"
+
+[tool.setuptools]
+packages = ["autocut", "autocut.court", "autocut.activity"]
